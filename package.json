@@ -11,6 +11,7 @@
   "dependencies": {
     "@next/font": "13.1.6",
     "@react-spring/three": "^9.6.1",
+    "@react-three/cannon": "^6.5.2",
     "@react-three/drei": "^9.56.25",
     "@react-three/fiber": "^8.11.2",
     "@types/node": "18.14.0",
@@ -26,6 +27,7 @@
   },
   "devDependencies": {
     "@types/three": "^0.149.0",
-    "next-transpile-modules": "^10.0.0"
+    "next-transpile-modules": "^10.0.0",
+    "react-use-refs": "^1.0.1"
   }
 }
