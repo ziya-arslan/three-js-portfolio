@@ -54,16 +54,6 @@ function Composition({ ...props }) {
       4 + 11 * (1 - r1),
       3 + 2 * (1 - r1)
     );
-    if (r3)
-      group.current.scale.x =
-        group.current.scale.y =
-        group.current.scale.z =
-          THREE.MathUtils.damp(
-            group.current.scale.z,
-            1.5 + 0.1 * (1 - rsqw(r3)),
-            4,
-            delta
-          );
   });
   return (
     <>
@@ -122,13 +112,7 @@ const M1 = forwardRef(({ texture, children, ...props }, ref) => {
           geometry={nodes.back_2.geometry}
           material={materials.aluminium}
         />
-        <mesh geometry={nodes.matte.geometry}>
-          <Html className="content" transform>
-            <div className="wrapper" onPointerDown={(e) => e.stopPropagation()}>
-              <p>test</p>
-            </div>
-          </Html>
-        </mesh>
+        <mesh geometry={nodes.matte.geometry}></mesh>
       </group>
       {children}
       <mesh
